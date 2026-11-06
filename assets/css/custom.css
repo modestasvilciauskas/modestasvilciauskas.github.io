@@ -1,73 +1,146 @@
+
+/* =====================================
+   1. PAGRINDINES SVETAINES SPALVOS
+===================================== */
+
+:root {
+    --accent-color: #2874a6;
+    --heading-color: #1e3a5f;
+    --default-color: #444444;
+    --background-color: #ffffff;
+}
+
+/* Bendras svetaines stilius */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f7;
+    color: #444444;
+}
+
+
+/* =====================================
+   2. ANTRASTES
+===================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e3a5f;
+    font-weight: 600;
+}
+
 h1 {
     font-size: 36px;
-    color: #1e3a5f;
-    font-weight: bold;
 }
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.section-title h2 {
+    color: #1e3a5f;
+}
+
+.section-title h2::after {
+    background-color: #2874a6;
+}
+
+
+/* =====================================
+   3. PASTRAIPOS IR TEKSTAS
+===================================== */
 
 p {
-    font-size: 16px;
-    color: #555555;
+    color: #444444;
     line-height: 1.7;
     letter-spacing: 0.3px;
+    font-size: 16px;
 }
 
-button {
-    background-color: #2874a6;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+
+/* =====================================
+   4. NAVIGACIJOS JUOSTA
+===================================== */
+
+.navmenu a {
+    color: #1e3a5f;
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: #1e3a5f;
-    transform: scale(1.05);
-}
-
-a {
+.navmenu a:hover,
+.navmenu a.active {
     color: #2874a6;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-a:hover {
+.navmenu a i {
+    color: #2874a6;
+}
+
+.navmenu a:hover i {
     color: #e67e22;
-    text-decoration: underline;
 }
 
-a:active {
-    color: #c0392b;
-}
-
-ul {
-    padding-left: 25px;
-    color: #444444;
-    line-height: 1.8;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-section {
-    margin: 25px;
-    padding: 25px;
-}
-
-section {
+.header {
     background-color: #ffffff;
-    border: 1px solid #dddddd;
+    box-shadow: 2px 0 15px rgba(30, 58, 95, 0.1);
+}
+
+
+/* =====================================
+   5. HERO SEKCIJA
+===================================== */
+
+.hero h2 {
+    color: #1e3a5f;
+    font-weight: 700;
+}
+
+.hero p {
+    color: #2874a6;
+    font-size: 22px;
+}
+
+.hero .social-links a {
+    background-color: #2874a6;
+    color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+    background-color: #1e3a5f;
+    transform: translateY(-4px);
+}
+
+
+/* =====================================
+   6. APIE MANE SEKCIJA
+===================================== */
+
+.about {
+    background-color: #ffffff;
+}
+
+.about h2 {
+    color: #1e3a5f;
+}
+
+.about ul li i {
+    color: #2874a6;
+}
+
+.about img {
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
 }
 
-body {
-    background-color: #f0f3f7;
-}
 
-/* Skills progress bars */
+/* =====================================
+   7. IGUDZIU PROGRESS BAR
+===================================== */
 
 .progress {
     margin-bottom: 25px;
@@ -78,17 +151,17 @@ body {
     justify-content: space-between;
     font-size: 15px;
     font-weight: 600;
-    color: #333;
+    color: #1e3a5f;
     margin-bottom: 8px;
 }
 
 .progress .val {
+    color: #2874a6;
     font-style: normal;
-    color: #000000;
 }
 
 .progress-bar-wrap {
-    background-color: #e5e5e5;
+    background-color: #dce5ed;
     height: 12px;
     width: 100%;
     border-radius: 10px;
@@ -97,7 +170,202 @@ body {
 
 .progress-bar {
     height: 100%;
-    background-color: #030303;
+    background-color: #2874a6;
     border-radius: 10px;
     transition: width 0.8s ease;
+}
+
+
+/* =====================================
+   8. PATIRTIES SEKCIJA
+===================================== */
+
+.resume {
+    background-color: #f0f3f7;
+}
+
+.resume .resume-title {
+    color: #1e3a5f;
+    font-size: 24px;
+}
+
+.resume .resume-item h4 {
+    color: #2874a6;
+}
+
+.resume .resume-item h5 {
+    background-color: #dce5ed;
+    color: #1e3a5f;
+    padding: 5px 12px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.resume .resume-item {
+    border-left-color: #2874a6;
+}
+
+
+/* =====================================
+   9. PORTFOLIO SEKCIJA
+===================================== */
+
+.portfolio {
+    background-color: #ffffff;
+}
+
+.portfolio .portfolio-filters li {
+    color: #1e3a5f;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+    color: #2874a6;
+}
+
+.portfolio .portfolio-info {
+    background-color: rgba(30, 58, 95, 0.9);
+}
+
+.portfolio .portfolio-info h4 {
+    color: #ffffff;
+}
+
+.portfolio .portfolio-info a {
+    color: #ffffff;
+}
+
+.portfolio .portfolio-info a:hover {
+    color: #e67e22;
+}
+
+.portfolio img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-item:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =====================================
+   10. PASLAUGU SEKCIJA
+===================================== */
+
+.services {
+    background-color: #f0f3f7;
+}
+
+.services h2,
+.services h3 {
+    color: #1e3a5f;
+}
+
+.services table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.services th {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+}
+
+.services td {
+    padding: 12px;
+    border: 1px solid #dce5ed;
+    color: #444444;
+}
+
+.services tr:nth-child(even) {
+    background-color: #f0f3f7;
+}
+
+.services tr:hover {
+    background-color: #e2edf5;
+}
+
+
+/* =====================================
+   11. SARASAI
+===================================== */
+
+ul li::marker,
+ol li::marker {
+    color: #2874a6;
+}
+
+li {
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================
+   12. MYGTUKAI IR NUORODOS
+===================================== */
+
+button {
+    background-color: #2874a6;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1e3a5f;
+    transform: translateY(-2px);
+}
+
+a {
+    transition: 0.3s;
+}
+
+
+/* =====================================
+   13. SEKCIJU ISDESTYMAS
+===================================== */
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section .container {
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   14. RESPONSIVE DIZAINAS
+===================================== */
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .services table {
+        font-size: 13px;
+    }
+
+    .services td,
+    .services th {
+        padding: 8px;
+    }
 }

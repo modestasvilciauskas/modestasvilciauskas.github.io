@@ -10,8 +10,6 @@
     --background-color: #ffffff;
 }
 
-/* Bendras svetaines stilius */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f3f7;
@@ -50,7 +48,7 @@ h3 {
 
 
 /* =====================================
-   3. PASTRAIPOS IR TEKSTAS
+   3. TEKSTAS IR PASTRAIPOS
 ===================================== */
 
 p {
@@ -62,30 +60,58 @@ p {
 
 
 /* =====================================
-   4. NAVIGACIJOS JUOSTA
+   4. SONINE NAVIGACIJOS JUOSTA
 ===================================== */
 
-.navmenu a {
+#header {
+    width: 65px;
+    max-width: 65px;
+    padding: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 2px 0 15px rgba(30, 58, 95, 0.1);
+}
+
+#navmenu {
+    width: 65px;
+    padding: 0;
+}
+
+#navmenu a {
+    width: 45px;
+    height: 45px;
+    margin: 5px auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #1e3a5f;
     transition: 0.3s;
 }
 
-.navmenu a:hover,
-.navmenu a.active {
+#navmenu a span {
+    display: none;
+}
+
+#navmenu a i {
+    color: #2874a6;
+    font-size: 20px;
+}
+
+#navmenu a:hover,
+#navmenu a.active {
+    background-color: #e5eef5;
     color: #2874a6;
 }
 
-.navmenu a i {
-    color: #2874a6;
-}
-
-.navmenu a:hover i {
+#navmenu a:hover i {
     color: #e67e22;
 }
 
-.header {
-    background-color: #ffffff;
-    box-shadow: 2px 0 15px rgba(30, 58, 95, 0.1);
+/* Pagrindinio turinio atitraukimas */
+
+.main {
+    margin-left: 65px;
 }
 
 
@@ -139,7 +165,7 @@ p {
 
 
 /* =====================================
-   7. IGUDZIU PROGRESS BAR
+   7. IGUDZIU JUOSTOS
 ===================================== */
 
 .progress {
@@ -348,10 +374,32 @@ section .container {
 
 
 /* =====================================
-   14. RESPONSIVE DIZAINAS
+   14. MOBILUSIS ISDESTYMAS
 ===================================== */
 
+@media (max-width: 1199px) {
+
+    #header {
+        width: 0;
+        max-width: 0;
+        overflow: visible;
+    }
+
+    #navmenu {
+        width: auto;
+    }
+
+    #navmenu a span {
+        display: inline;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 768px) {
+
     .hero h2 {
         font-size: 28px;
     }

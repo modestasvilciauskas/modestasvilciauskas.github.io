@@ -66,3 +66,35 @@ section {
 body {
     background-color: #f0f3f7;
 }
+
+nav {
+    background-color: #1e3a5f;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.progress {
+    background-color: #dddddd;
+    height: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    background-color: #2874a6;
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+}

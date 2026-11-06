@@ -84,7 +84,7 @@ body {
 
 .progress .val {
     font-style: normal;
-    color: #2874a6;
+    color: #000000;
 }
 
 .progress-bar-wrap {
@@ -97,7 +97,7 @@ body {
 
 .progress-bar {
     height: 100%;
-    background-color: #000000;
+    background-color: #030303;
     border-radius: 10px;
     transition: width 0.8s ease;
 }

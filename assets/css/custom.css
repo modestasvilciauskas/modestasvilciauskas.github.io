@@ -375,18 +375,18 @@ section .container {
 ================================ */
 
 #header {
-    width: 70px !important;
-    max-width: 70px !important;
+    width: 50px !important;
+    max-width: 50px !important;
     left: 0 !important;
     overflow: visible !important;
 }
 
 #navmenu {
-    width: 70px !important;
+    width: 50px !important;
 }
 
 #navmenu ul {
-    width: 70px !important;
+    width: 50px !important;
 }
 
 #navmenu a {

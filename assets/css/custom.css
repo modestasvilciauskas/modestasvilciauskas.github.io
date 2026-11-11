@@ -624,3 +624,110 @@ main a:active {
         flex-direction: column;
     }
 }
+
+/* ANIMUOTAS GRADIENTINIS FONAS */
+
+.animated-gradient {
+    background: linear-gradient(
+        270deg,
+        #0563bb,
+        #9333ea,
+        #ec4899
+    );
+
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* FIGŪRŲ IŠDĖSTYMAS */
+
+.my-shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 40px;
+}
+
+/* APSKRITIMAS */
+
+.my-circle {
+    width: 70px;
+    height: 70px;
+    background: #0563bb;
+    border-radius: 50%;
+
+    animation:
+        floating 3s infinite ease-in-out,
+        rotating 4s infinite linear,
+        scaling 2s infinite alternate;
+}
+
+/* TRIKAMPIS */
+
+.my-triangle {
+    width: 80px;
+    height: 80px;
+    background: #9333ea;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    animation:
+        floating 4s infinite ease-in-out,
+        rotating 5s infinite linear,
+        scaling 3s infinite alternate;
+}
+
+/* JUDĖJIMAS */
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+/* SUKIMASIS */
+
+@keyframes rotating {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+/* DIDĖJIMAS IR MAŽĖJIMAS */
+
+@keyframes scaling {
+    from {
+        scale: 0.8;
+    }
+
+    to {
+        scale: 1.3;
+    }
+}

@@ -51,6 +51,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>Apie</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Patirtis</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#skills"><i class="bi bi-star navicon"></i><span>Įgūdžių progresas</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Paslaugos</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Kontaktai</span></a></li>
       </ul>
@@ -125,74 +126,144 @@
 
     </section><!-- /About Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <!-- Skills Kanban Section -->
+<section id="skills" class="skills section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Įgūdžiai</h2>
-        
-      </div><!-- End Section Title -->
+    <div class="container section-title">
+        <h2>Mano įgūdžių progresas</h2>
+        <p>Profesinių įgūdžių mokymosi ir tobulėjimo lenta</p>
+    </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
 
-        <div class="row skills-content skills-animation">
+        <div class="skill-kanban">
 
-          <div class="col-lg-6">
+            <!-- PLANUOJAMA -->
+            <div class="skill-column planned">
+                <h3>Planuojama</h3>
 
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="skill-card">
+                    <h4>PowerWorld</h4>
+                    <p>Būsena: Planuojama</p>
+                    <span>25 XP</span>
+                </div>
 
-            <div class="progress">
-              <span class="skill"><span>AutoCAD</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="skill-card">
+                    <h4>Photoshop</h4>
+                    <p>Būsena: Planuojama</p>
+                    <span>35 XP</span>
+                </div>
+            </div>
 
-            <div class="progress">
-              <span class="skill"><span>MATLAB</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+            <!-- MOKOMASI -->
+            <div class="skill-column learning">
+                <h3>Mokomasi</h3>
 
-          </div>
+                <div class="skill-card">
+                    <h4>MATLAB</h4>
+                    <p>Būsena: Mokomasi</p>
+                    <span>80 XP</span>
+                </div>
 
-          <div class="col-lg-6">
+                <div class="skill-card">
+                    <h4>KiCad</h4>
+                    <p>Būsena: Mokomasi</p>
+                    <span>65 XP</span>
+                </div>
 
-            <div class="progress">
-              <span class="skill"><span>KiCad</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="skill-card">
+                    <h4>WordPress/CMS</h4>
+                    <p>Būsena: Mokomasi</p>
+                    <span>50 XP</span>
+                </div>
+            </div>
 
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+            <!-- ATLIKTA -->
+            <div class="skill-column completed">
+                <h3>Atlikta</h3>
 
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="skill-card">
+                    <h4>HTML</h4>
+                    <p>Būsena: Atlikta</p>
+                    <span>70 XP</span>
+                </div>
 
-          </div>
+                <div class="skill-card">
+                    <h4>CSS</h4>
+                    <p>Būsena: Atlikta</p>
+                    <span>60 XP</span>
+                </div>
+
+                <div class="skill-card">
+                    <h4>AutoCAD</h4>
+                    <p>Būsena: Atlikta</p>
+                    <span>55 XP</span>
+                </div>
+            </div>
 
         </div>
 
-      </div>
+        <!-- XP, LYGIS IR RANGAS -->
+        <div class="xp-info">
 
-    </section><!-- /Skills Section -->
+            <h2>Patirties informacija</h2>
+
+            <div class="xp-box">
+                <h3>Bendri XP</h3>
+                <p id="totalXP">0</p>
+            </div>
+
+            <div class="xp-box">
+                <h3>Lygis</h3>
+                <p id="level">1</p>
+            </div>
+
+            <div class="xp-box">
+                <h3>Rangas</h3>
+                <p id="rank">Pradedantysis</p>
+            </div>
+
+        </div>
+
+        <!-- PROGRESO JUOSTA -->
+        <div class="xp-progress">
+
+            <h3>Patirties taškų progresas</h3>
+
+            <div class="xp-bar">
+                <div class="xp-fill" id="xpFill"></div>
+            </div>
+
+            <p id="xpText">0 XP</p>
+
+        </div>
+
+        <!-- STATISTIKA -->
+        <div class="skill-statistics">
+
+            <h2>Įgūdžių statistika</h2>
+
+            <div class="stat-box">
+                <h3 id="allSkills">8</h3>
+                <p>Visi įgūdžiai</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="doneSkills">3</h3>
+                <p>Atlikti įgūdžiai</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="donePercent">37.5%</h3>
+                <p>Atlikta procentais</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- End Skills Kanban Section -->
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -548,6 +619,79 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+
+// Įgūdžių duomenys
+let skills = [
+    {name: "PowerWorld", status: "planned", xp: 25},
+    {name: "Photoshop", status: "planned", xp: 35},
+
+    {name: "MATLAB", status: "learning", xp: 80},
+    {name: "KiCad", status: "learning", xp: 65},
+    {name: "WordPress/CMS", status: "learning", xp: 50},
+
+    {name: "HTML", status: "completed", xp: 70},
+    {name: "CSS", status: "completed", xp: 60},
+    {name: "AutoCAD", status: "completed", xp: 55}
+];
+
+// Suskaičiuojame bendrus XP
+let totalXP = skills.reduce((sum, skill) => sum + skill.xp, 0);
+
+// Nustatome lygį ir rangą
+let level = 1;
+let rank = "Pradedantysis";
+
+if (totalXP >= 300) {
+    level = 4;
+    rank = "Profesionalas";
+}
+else if (totalXP >= 150) {
+    level = 3;
+    rank = "Specialistas";
+}
+else if (totalXP >= 50) {
+    level = 2;
+    rank = "Praktikantas";
+}
+
+// Atvaizduojame informaciją
+document.getElementById("totalXP").textContent = totalXP;
+document.getElementById("level").textContent = level;
+document.getElementById("rank").textContent = rank;
+
+// Progreso skaičiavimas
+let progress = 100;
+
+if (level === 1) {
+    progress = totalXP / 50 * 100;
+}
+else if (level === 2) {
+    progress = (totalXP - 50) / 100 * 100;
+}
+else if (level === 3) {
+    progress = (totalXP - 150) / 150 * 100;
+}
+
+document.getElementById("xpFill").style.width = progress + "%";
+document.getElementById("xpText").textContent = totalXP + " XP";
+
+// Statistika
+let allSkills = skills.length;
+
+let doneSkills = skills.filter(
+    skill => skill.status === "completed"
+).length;
+
+let donePercent = doneSkills / allSkills * 100;
+
+document.getElementById("allSkills").textContent = allSkills;
+document.getElementById("doneSkills").textContent = doneSkills;
+document.getElementById("donePercent").textContent =
+    donePercent.toFixed(1) + "%";
+
+</script>
 
 </body>
 

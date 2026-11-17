@@ -630,9 +630,9 @@ main a:active {
 .animated-gradient {
     background: linear-gradient(
         270deg,
-        #0563bb,
-        #9333ea,
-        #ec4899
+        #44890c,
+        #c6c013,
+        #ce890a
     );
 
     background-size: 600% 600%;

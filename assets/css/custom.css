@@ -731,3 +731,57 @@ main a:active {
         scale: 1.3;
     }
 }
+
+
+/* Laboratorinio darbo kontaktu forma */
+
+#contactForm {
+    padding: 20px;
+}
+
+#contactForm .col-md-12,
+#contactForm .col-md-6 {
+    margin-bottom: 10px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contactForm input[type="range"] {
+    width: 85%;
+    display: inline-block;
+}
+
+#contactForm button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#contactForm button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#contactForm .error {
+    display: block;
+    color: red;
+    font-size: 14px;
+}
+
+#contactForm .invalid {
+    border: 2px solid red !important;
+}
+
+#contactForm .valid {
+    border: 2px solid green !important;
+}
+
+#result {
+    padding: 20px;
+    margin-top: 20px;
+    background: #f2f2e9;
+    border-radius: 8px;
+}

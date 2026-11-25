@@ -785,3 +785,30 @@ main a:active {
     background: #f2f2e9;
     border-radius: 8px;
 }
+
+
+/* Įgūdžių būsenų pasirinkimo laukelis */
+.skill-status {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Pasirinkimo laukelio efektas */
+.skill-status:focus {
+    outline: none;
+    border-color: #149ddd;
+    box-shadow: 0 0 5px rgba(20, 157, 221, 0.3);
+}
+
+/* Įgūdžio aprašymas */
+.skill-card p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
